@@ -78,7 +78,7 @@ public class GymMembershipDepartment {
     }
 
     public void trackCustomerFrequency(Customer customer) {
-        Path path = Paths.get(customer.getName() + "-" + customer.getPersonNr() + ".txt");
+        Path path = Paths.get("customerTracking\\" + customer.getName() + "-" + customer.getPersonNr() + ".txt");
         BufferedWriter bufWt;
         try {
             if (Files.exists(path)) {
