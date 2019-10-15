@@ -8,7 +8,7 @@ public class Main {
         if(!loadResult){
             System.exit(0);
         }
-        String input = "";
+        String input;
         Customer customerFound;
         while (true) {
             input = JOptionPane.showInputDialog("What is your name or your personal number?");
@@ -18,7 +18,7 @@ public class Main {
                     System.exit(0);
                 }
             } else {
-                input = input.trim();
+                input = input.replaceAll("\\s+", " ").trim();
                 customerFound = gymMembershipDepartment.getCustomer(input);
                 break;
             }
