@@ -13,6 +13,7 @@ import static javax.swing.JOptionPane.*;
 
 public class GymMembershipDepartment {
     private List<Customer> customerList = new ArrayList<>();
+    //demothings
 
     public boolean loadCustomerList(String filename) {
         BufferedReader bufIn;
